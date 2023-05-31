@@ -32,8 +32,8 @@
     }
     h1 {
         font-size: 3rem;
-        font-family: "Kodchasan";
-        font-weight: 200;
+        font-family: "Urbanist";
+        font-weight: 100;
     }
     .container {
         display: grid;
