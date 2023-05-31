@@ -4,20 +4,29 @@
         <svg
             height="100%"
             version="1.1"
-            viewBox="0 0 5.8999252 24.420761"
+            viewBox="0 0 29.904167 28.485369"
             xmlns="http://www.w3.org/2000/svg"
         >
             <g
-                transform="translate(-85.685452,-110.82086)"
+                transform="translate(-73.683332,-106.85213)"
                 fill="none"
                 stroke="#000"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                stroke-width=".8"
             >
-                <circle cx="88.635414" cy="113.77082" r="2.5499623" />
-                <circle cx="88.635414" cy="132.29166" r="2.5499625" />
-                <circle cx="88.635414" cy="123.03124" r="2.5499625" />
+                <g stroke-width=".8">
+                    <circle cx="88.635414" cy="109.80209" r="2.5499623" />
+                    <circle cx="88.635414" cy="128.32292" r="2.5499625" />
+                    <circle cx="88.635414" cy="119.06251" r="2.5499625" />
+                </g>
+                <path
+                    d="m74.083331 134.9375h9.260417v-21.16667"
+                    stroke-width=".4"
+                />
+                <path
+                    d="m103.1875 134.9375h-9.260419v-21.16667"
+                    stroke-width=".4"
+                />
             </g>
         </svg>
     </div>
@@ -31,6 +40,7 @@
         box-sizing: border-box;
     }
     h1 {
+        letter-spacing: 0.6rem;
         font-size: 3rem;
         font-family: "Urbanist";
         font-weight: 100;
