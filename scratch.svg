@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.9899495"
-     inkscape:cx="601.29471"
-     inkscape:cy="322.59972"
+     inkscape:zoom="1.4"
+     inkscape:cx="-181.11749"
+     inkscape:cy="304.16003"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -335,34 +335,6 @@
        d="m 185.86164,91.915418 c 0,0 3.05129,2.502472 6.77088,-0.08078"
        style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <g
-       id="g1236-9-1"
-       transform="translate(-60.466468,-49.5981)">
-      <circle
-         cy="65.407822"
-         cx="156.68723"
-         id="path987-0-51-4-4"
-         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.899993;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
-         r="0.5" />
-      <circle
-         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.899993;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
-         id="path987-0-5-3-5-9"
-         cx="156.68723"
-         cy="68.22142"
-         r="0.5" />
-      <circle
-         cy="71.035019"
-         cx="156.68723"
-         id="path987-0-5-9-5-9-1"
-         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.899993;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
-         r="0.5" />
-      <circle
-         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.899993;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
-         id="path987-0-5-9-8-4-5-1"
-         cx="156.68723"
-         cy="73.848618"
-         r="0.5" />
-    </g>
-    <g
        transform="translate(-59.491117,-52.625923)"
        aria-label="AeroPod"
        id="text835-5-1-2"
@@ -397,19 +369,65 @@
          id="path1167-6-7"
          sodipodi:nodetypes="sccsccsccscscscccssccsccsscsscs" />
     </g>
+    <path
+       sodipodi:nodetypes="cccccccccccccccc"
+       id="path1565"
+       d="m 101.45195,24.075466 v -0.424983 l -1.19575,-0.339987 0.021,-0.318737 0.75521,-0.02125 c -0.0586,-0.381455 0.65026,0.03515 0.58738,-0.382485 v -7.352218 l 4.17464,0.0425 0.021,7.330966 c 0.10906,0.345019 0.47834,-0.02497 0.50347,0.382487 l 0.90205,0.085 0.021,0.25499 -1.19575,0.191243 v 0.467482 c 0,0 -2.28661,0.722472 -4.5942,0.085 z"
+       style="fill:none;stroke:#000000;stroke-width:0.899997;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none" />
     <g
-       transform="translate(-0.52916667)"
-       id="g1563">
-      <path
-         sodipodi:nodetypes="ccc"
-         id="path1137-9-7"
-         d="m 99.586056,13.787469 v 13.085731 0"
-         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <path
-         id="path1861-6-4"
-         d="m 93.334226,27.109677 c 0,0 2.53224,2.346775 6.25183,-0.236477"
-         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         sodipodi:nodetypes="cc" />
+       id="g1236-9-0"
+       transform="translate(35.345929,-44.638519)">
+      <circle
+         cy="65.407822"
+         cx="156.68723"
+         id="path987-0-51-4-0"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.899993;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         r="0.5" />
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.899993;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="path987-0-5-3-5-4"
+         cx="156.68723"
+         cy="68.22142"
+         r="0.5" />
+      <circle
+         cy="71.035019"
+         cx="156.68723"
+         id="path987-0-5-9-5-9-7"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.899993;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         r="0.5" />
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.899993;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="path987-0-5-9-8-4-5-2"
+         cx="156.68723"
+         cy="73.848618"
+         r="0.5" />
     </g>
+    <text
+       id="text1598"
+       y="76.162201"
+       x="30.994047"
+       style="font-size:12.7px;line-height:1.25;font-family:Comfortaa;-inkscape-font-specification:Comfortaa;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.264583"
+         y="76.162201"
+         x="30.994047"
+         id="tspan1596"
+         sodipodi:role="line">AeroPod</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 87.743059,75.494027 0.0037,-0.424966 -1.192715,-0.350482 0.0238,-0.31854 0.755369,-0.01461 c -0.05525,-0.381956 0.649926,0.04086 0.590719,-0.37731 l 0.06461,-7.351934 c 0,0 1.339244,0.50789 2.041664,0.523906 0.725918,0.01655 2.132442,-0.444723 2.132442,-0.444723 l -0.04342,7.330867 c 0.106022,0.345965 0.478539,-0.02077 0.500092,0.386892 l 0.901267,0.09292 0.01876,0.255165 -1.197384,0.180728 -0.0041,0.467465 c 0,0 -2.29287,0.70235 -4.594769,0.04463 z"
+       id="path1565-0"
+       sodipodi:nodetypes="cccccccsccccccccc" />
+    <text
+       id="text1617"
+       y="48.191963"
+       x="40.821426"
+       style="font-size:12.7px;line-height:1.25;font-family:Comfortaa;-inkscape-font-specification:Comfortaa;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.264583"
+         y="48.191963"
+         x="40.821426"
+         id="tspan1615"
+         sodipodi:role="line">AeroPod</tspan></text>
   </g>
 </svg>
