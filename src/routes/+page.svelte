@@ -19,18 +19,16 @@
     }
     .container {
         display: grid;
-        grid-template-rows: 6rem;
     }
     .logo {
+        margin: 1rem;
         padding: 1rem;
+        width: min-content;
         position: relative;
-        display: grid;
-        align-items: center;
-        justify-items: start;
-        grid-template-columns: 1fr;
     }
-    .logo svg {
-        margin-left: 0.4rem;
-        height: 75%;
+    .aero-panel{
+        border: 1px solid #eaeaea;
+        border-radius: 0.4rem;
+        box-shadow: 2px 2px 5px #cccccc;
     }
 </style>
