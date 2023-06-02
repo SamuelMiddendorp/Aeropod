@@ -8,6 +8,15 @@
     <main>
         <h2>Hello {currentUser}</h2>
         <aside>
+            <a class="main-link">
+                Recipes
+                </a>
+            <a class="main-link">
+                Gear
+            </a>
+            <a class="main-link">
+                Coffee
+            </a>
         </aside>
     </main>
 </div>
@@ -40,12 +49,13 @@
         position: relative;
     }
     main{
+        max-width: 1200px;
         display: grid;
+        place-self: center;
         place-content: center;
     }
     .aero-panel{
-        border: 1px solid #eaeaea;
+        border: 1px solid #e6e6e6;
         border-radius: 0.4rem;
-        box-shadow: 2px 2px 5px #cccccc;
     }
 </style>
