@@ -72,6 +72,7 @@
         display: grid;
         grid-template-columns: min-content 1fr;
         grid-template-rows: min-content 1fr;
+        padding: 1rem;
         place-self: center;
     }
     main h2{
