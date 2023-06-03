@@ -12,7 +12,7 @@
         <aside>
             <Nav/>
         </aside>
-        <div class="main-content">
+        <div class="content">
         <slot></slot>
         </div>
     </main>
@@ -24,6 +24,7 @@
     :global(*) {
         margin: 0;
         padding: 0;
+        border: 1px solid #111;
         box-sizing: border-box;
     }
     :global(.aero-panel){
@@ -41,10 +42,6 @@
         font-family: "Urbanist";
         font-weight: 100;
     }
-    h2{
-        font-family: "Archivo Black", sans-serif;
-        font-size: 4rem;
-    }
     .container {
         display: grid;
     }
@@ -57,7 +54,22 @@
     main{
         max-width: 1200px;
         display: grid;
+        grid-template-columns: min-content 1fr;
+        grid-template-rows: min-content 1fr;
         place-self: center;
-        place-content: center;
+    }
+    main h2{
+        font-family: "Archivo Black", sans-serif;
+        font-size: 4rem;
+        grid-row: 1;
+        grid-column: 1/3;
+    }
+    main aside{
+        grid-row: 2;
+        grid-column: 1;
+    }
+    main .content{
+        grid-row: 2;
+        grid-column: 2;
     }
 </style>
