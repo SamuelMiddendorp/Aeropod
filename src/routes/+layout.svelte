@@ -21,6 +21,13 @@
 <style>
 
     @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Geologica:wght@100&family=Urbanist:wght@100&display=swap');
+    
+    @media only screen and (max-width: 600px) {
+        .content{
+            margin-left: 0 !important;
+        }
+}
+    
     :global(html) {
         scroll-behavior: smooth;
     }
@@ -68,7 +75,7 @@
         position: relative;
     }
     main{
-        width: 1200px;
+        max-width: 1200px;
         display: grid;
         grid-template-columns: min-content 1fr;
         grid-template-rows: min-content 1fr;
