@@ -20,20 +20,21 @@
 
 <style>
 
-    @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Urbanist:wght@100&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Geologica:wght@100&family=Urbanist:wght@100&display=swap');
     :global(*) {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
-    /* debug */
-    :global(*){
-        border: 2px solid #333;
-    }
     :global(.aero-panel){
         border: 1px solid #e6e6e6;
+        box-shadow: 2px 1px 2px 1px rgb(238, 238, 238);
         border-radius: 0.4rem;
     }
+    :global(a){
+        all: unset;
+    }
+
     h1 {
         letter-spacing: 0.2rem;
         font-size: 3rem;
