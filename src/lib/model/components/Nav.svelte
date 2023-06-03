@@ -178,19 +178,21 @@
         grid-auto-flow: row;
     }
     .icon-highlight-fill {
+        fill: #fff;
         transition: all 0.2s ease-in-out;
     }
     .icon-highlight-stroke {
+        stroke: #fff;
         transition: all 0.2s ease-in-out;
     }
     a:hover {
         background-color: #e7e7e7;
     }
     a:hover .icon-highlight-fill {
-        fill: #ff6a00;
+        fill: #111;
     }
     a:hover .icon-highlight-stroke {
-        stroke: #ff6a00;
+        stroke: #111;
     }
     svg {
         margin-bottom: 20px;

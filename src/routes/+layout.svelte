@@ -70,7 +70,6 @@
     }
     .logo {
         margin: 1rem;
-        padding: 1rem;
         width: min-content;
         position: relative;
     }
