@@ -160,8 +160,9 @@
 <style>
     @media only screen and (max-width: 600px) {
   div{
-    position: fixed;
+    position: fixed !important;
     width: 100%;
+    top: unset !important;
     bottom: 0;
     padding: 1rem;
     left: 0;
@@ -174,25 +175,27 @@
   }
 }
     div {
+        position: sticky;
+        top: 2rem;
         display: grid;
         grid-auto-flow: row;
     }
     .icon-highlight-fill {
-        fill: #fff;
+        fill: rgb(220, 220, 220);
         transition: all 0.2s ease-in-out;
     }
     .icon-highlight-stroke {
-        stroke: #fff;
+        stroke: rgb(220, 220, 220);
         transition: all 0.2s ease-in-out;
     }
     a:hover {
         background-color: #e7e7e7;
     }
     a:hover .icon-highlight-fill {
-        fill: #111;
+        fill: rgb(255, 255, 255);
     }
     a:hover .icon-highlight-stroke {
-        stroke: #111;
+        stroke: rgb(255, 255, 255);
     }
     svg {
         margin-bottom: 20px;
