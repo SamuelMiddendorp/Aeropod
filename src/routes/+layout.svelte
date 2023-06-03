@@ -21,6 +21,9 @@
 <style>
 
     @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Geologica:wght@100&family=Urbanist:wght@100&display=swap');
+    :global(html) {
+        scroll-behavior: smooth;
+    }
     :global(*) {
         margin: 0;
         padding: 0;
