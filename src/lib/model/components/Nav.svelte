@@ -90,12 +90,12 @@ Recipes</a>
         font-size: 0.8rem;
         font-family: "Geologica", sans-serif;
         display: grid;
-        margin-top: 0.4rem;
         justify-content: center;
         justify-items: center;
         align-content: center;
         width: 5rem;
         height: 5rem;
         padding: 0.2rem;
+        margin-bottom: 0.8rem;
     }
 </style>
