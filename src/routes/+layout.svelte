@@ -1,4 +1,5 @@
 <script lang="ts">
+    export const prerender = true;
     import Nav from "../lib/model/components/Nav.svelte";
 
     let currentUser = "Samie";
