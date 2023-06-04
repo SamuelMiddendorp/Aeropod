@@ -23,12 +23,12 @@
 
     @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Geologica:wght@100&family=Urbanist:wght@100&display=swap');
     :root{
-        --white-100: rgb(230,230,230);
-        --white-200: rgb(235,235,235);
-        --white-300: rgb(240,240,240);
-        --white-500: rgb(245,245,245);
-        --white-700: rgb(250,250,250);
-        --white-900: rgb(255,255,255);
+        --white-900: rgb(230,230,230);
+        --white-700: rgb(235,235,235);
+        --white-500: rgb(240,240,240);
+        --white-300: rgb(245,245,245);
+        --white-200: rgb(250,250,250);
+        --white-100: rgb(255,255,255);
     }
     @media only screen and (max-width: 600px) {
         .content{
@@ -45,7 +45,7 @@
         box-sizing: border-box;
     }
     :global(.aero-panel){
-        box-shadow: 2px 1px 2px 1px rgb(238, 238, 238);
+        box-shadow: 2px 1px 2px 1px var(--white-300);
         border-radius: 0.4rem;
     }
     :global(a){

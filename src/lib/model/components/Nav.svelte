@@ -172,7 +172,7 @@
 
             padding: 1rem;
 
-            background-color: #fff;
+            background-color: var(--white-100);
         }
         a {
             margin-bottom: 0 !important;
@@ -186,23 +186,23 @@
         grid-auto-flow: row;
     }
     .icon-highlight-fill {
-        fill: rgb(220, 220, 220);
+        fill: var(--white-900);
         transition: all 0.2s ease-in-out;
     }
     .icon-highlight-stroke {
-        stroke: rgb(220, 220, 220);
+        stroke: var(--white-900);
         transition: all 0.2s ease-in-out;
     }
     a:hover {
-        background-color: #e7e7e7;
+        background-color: var(--white-500);
     }
     a:hover .icon-highlight-fill {
-        fill: rgb(255, 255, 255);
+        fill: var(--white-100);
     }
     a:hover .icon-highlight-stroke {
-        stroke: rgb(255, 255, 255);
+        stroke: var(--white-100);
     }
-    svg {
+    svg{
         margin-bottom: 20px;
     }
     a {
@@ -216,7 +216,7 @@
 
         width: 5rem;
         height: 5rem;
-        
+
         margin-bottom: 0.8rem;
     }
 </style>
