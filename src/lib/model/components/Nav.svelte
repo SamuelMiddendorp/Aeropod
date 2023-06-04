@@ -172,7 +172,7 @@
 
             padding: 1rem;
 
-            background-color: var(--white-100);
+            background-color: var(--color-100);
         }
         a {
             margin-bottom: 0 !important;
@@ -185,22 +185,25 @@
         display: grid;
         grid-auto-flow: row;
     }
+    path{
+        stroke: var(--color-text);
+    }
     .icon-highlight-fill {
-        fill: var(--white-900);
+        fill: var(--color-900);
         transition: all 0.2s ease-in-out;
     }
     .icon-highlight-stroke {
-        stroke: var(--white-900);
+        stroke: var(--color-900);
         transition: all 0.2s ease-in-out;
     }
     a:hover {
-        background-color: var(--white-500);
+        background-color: var(--color-500);
     }
     a:hover .icon-highlight-fill {
-        fill: var(--white-100);
+        fill: var(--color-100);
     }
     a:hover .icon-highlight-stroke {
-        stroke: var(--white-100);
+        stroke: var(--color-100);
     }
     svg{
         margin-bottom: 20px;
@@ -210,6 +213,7 @@
 
         font-family: "Geologica", sans-serif;
         font-size: 0.8rem;
+        color: var(--color-text);
 
         display: grid;
         justify-items: center;

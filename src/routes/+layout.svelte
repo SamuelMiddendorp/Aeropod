@@ -3,10 +3,21 @@
     import Nav from "../lib/model/components/Nav.svelte";
 
     let currentUser = "Samie";
+    let switchTheme = () => {
+        document.documentElement.style.setProperty("--color-100", "var(--white-100)");
+        document.documentElement.style.setProperty("--color-200", "var(--white-200)");
+        document.documentElement.style.setProperty("--color-300", "var(--white-300)");
+        document.documentElement.style.setProperty("--color-500", "var(--white-500)");
+        document.documentElement.style.setProperty("--color-700", "var(--white-700)");
+        document.documentElement.style.setProperty("--color-900", "var(--white-900)");
+        document.documentElement.style.setProperty("--color-text", "var(--white-text)");
+    }
+    
 </script>
 <div class="container">
     <div class="logo">
         <h1>AeroPod</h1>
+        <button on:click={() => switchTheme()}></button>
     </div>
     <main>
         <h2>Hello {currentUser}, let's get started</h2>
@@ -29,6 +40,24 @@
         --white-300: rgb(245,245,245);
         --white-200: rgb(250,250,250);
         --white-100: rgb(255,255,255);
+        --white-text: rgb(5,5,5);
+
+        --black-900: rgb(70,70,70);
+        --black-700: rgb(40,40,40);
+        --black-500: rgb(30,30,30);
+        --black-300: rgb(20,20,20);
+        --black-200: rgb(10,10,10);
+        --black-100: rgb(0,0,0);
+        --black-text: rgb(220,220,220);
+
+        --color-900: var(--black-900);
+        --color-700: var(--black-700);
+        --color-500: var(--black-500);
+        --color-300: var(--black-300);
+        --color-200: var(--black-200);
+        --color-100: var(--black-100);
+        --color-text: var(--black-text);
+
     }
     @media only screen and (max-width: 600px) {
         .content{
@@ -38,6 +67,7 @@
     
     :global(html) {
         scroll-behavior: smooth;
+        background-color: var(--color-200);
     }
     :global(*) {
         margin: 0;
@@ -45,7 +75,7 @@
         box-sizing: border-box;
     }
     :global(.aero-panel){
-        box-shadow: 2px 1px 2px 1px var(--white-300);
+        box-shadow: 2px 1px 2px 1px var(--color-300);
         border-radius: 0.4rem;
     }
     :global(a){
@@ -55,16 +85,19 @@
         font-family: "Archivo Black", sans-serif;
         font-size: 2rem;
         margin-bottom: 0.2rem;
+        color: var(--color-text);
     }
     :global(h4){
         font-family: "Archivo Black", sans-serif;
         font-size: 1.2rem;
         margin-top: 2rem;
         margin-bottom: 0.4rem;
+        color: var(--color-text);
     }
     :global(p){
         font-family: "Geologica", sans-serif;
         margin-top: 0.6rem;
+        color: var(--color-text);
     }
 
     h1 {
@@ -72,6 +105,7 @@
         font-size: 3rem;
         font-family: "Urbanist";
         font-weight: 100;
+        color: var(--color-text);
     }
     .container {
         display: grid;
@@ -92,6 +126,7 @@
     main h2{
         font-family: "Archivo Black", sans-serif;
         font-size: 4rem;
+        color: var(--color-text);
         margin-bottom: 2rem;
         grid-row: 1;
         grid-column: 1/3;
