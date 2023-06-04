@@ -22,12 +22,19 @@
 <style>
 
     @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Geologica:wght@100&family=Urbanist:wght@100&display=swap');
-    
+    :root{
+        --white-100: rgb(230,230,230);
+        --white-200: rgb(235,235,235);
+        --white-300: rgb(240,240,240);
+        --white-500: rgb(245,245,245);
+        --white-700: rgb(250,250,250);
+        --white-900: rgb(255,255,255);
+    }
     @media only screen and (max-width: 600px) {
         .content{
             margin-left: 0 !important;
         }
-}
+    }
     
     :global(html) {
         scroll-behavior: smooth;

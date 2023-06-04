@@ -159,24 +159,29 @@
 
 <style>
     @media only screen and (max-width: 600px) {
-  div{
-    position: fixed !important;
-    width: 100%;
-    top: unset !important;
-    bottom: 0;
-    padding: 1rem;
-    left: 0;
-    background-color: #fff;
-    grid-template-columns: repeat(4, 1fr);
-    justify-content: space-between;
-  }
-  a{
-    margin-bottom: 0 !important;
-  }
-}
+        div {
+            grid-template-columns: repeat(4, 1fr);
+            justify-content: space-between;
+
+            width: 100%;
+
+            position: fixed !important;
+            top: unset !important;
+            bottom: 0;
+            left: 0;
+
+            padding: 1rem;
+
+            background-color: #fff;
+        }
+        a {
+            margin-bottom: 0 !important;
+        }
+    }
     div {
         position: sticky;
         top: 2rem;
+
         display: grid;
         grid-auto-flow: row;
     }
@@ -201,16 +206,17 @@
         margin-bottom: 20px;
     }
     a {
-        transition: all 0.3s ease-in-out;
-        font-size: 0.8rem;
+        transition: all 0.4s ease-in-out;
+
         font-family: "Geologica", sans-serif;
+        font-size: 0.8rem;
+
         display: grid;
-        justify-self: center;
-        justify-content: center;
         justify-items: center;
-        align-content: center;
+
         width: 5rem;
         height: 5rem;
+        
         margin-bottom: 0.8rem;
     }
 </style>
