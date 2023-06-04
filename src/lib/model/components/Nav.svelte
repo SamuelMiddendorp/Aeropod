@@ -183,6 +183,7 @@
         top: 2rem;
 
         display: grid;
+        justify-items: center;
         grid-auto-flow: row;
     }
     path{
