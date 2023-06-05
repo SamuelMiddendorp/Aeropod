@@ -1,6 +1,6 @@
 <script lang="ts">
     export const prerender = true;
-    import Nav from "../lib/model/components/Nav.svelte";
+    import Nav from "$lib/components/Nav.svelte";
 
     let currentUser = "Samie";
     let switchTheme = () => {

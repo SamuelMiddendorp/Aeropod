@@ -1,5 +1,5 @@
 <script>
-    import NavigateableHeading from "../../lib/model/components/NavigateableHeading.svelte";
+    import NavigateableHeading from "$lib/components/NavigateableHeading.svelte";
 </script>
 
 <h3>Wisdom</h3>
