@@ -3,14 +3,15 @@
     import Nav from "$lib/components/Nav.svelte";
 
     let currentUser = "Samie";
+    let currentTheme = "black";
     let switchTheme = () => {
-        document.documentElement.style.setProperty("--color-100", "var(--white-100)");
-        document.documentElement.style.setProperty("--color-200", "var(--white-200)");
-        document.documentElement.style.setProperty("--color-300", "var(--white-300)");
-        document.documentElement.style.setProperty("--color-500", "var(--white-500)");
-        document.documentElement.style.setProperty("--color-700", "var(--white-700)");
-        document.documentElement.style.setProperty("--color-900", "var(--white-900)");
-        document.documentElement.style.setProperty("--color-text", "var(--white-text)");
+
+        let globalVars = ["100","200","300","500","700","900","text"];
+        currentTheme = currentTheme == "black" ? "white" : "black";
+
+        globalVars.forEach((value: string) => {
+            document.documentElement.style.setProperty(`--color-${value}`, `var(--${currentTheme}-${value})`);
+        })
     }
     
 </script>
