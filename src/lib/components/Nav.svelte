@@ -177,6 +177,8 @@
         }
         a {
             margin-bottom: 0 !important;
+            width: 3rem !important;
+            height: 3rem !important;
         }
     }
     div {
@@ -223,7 +225,6 @@
 
         width: 5rem;
         height: 5rem;
-
         margin-bottom: 0.8rem;
     }
 </style>

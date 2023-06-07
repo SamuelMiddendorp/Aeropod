@@ -28,7 +28,21 @@ import type { Recipe } from "$lib/model/model";
             name: "Recipe 4",
             description: "lorem ipsum coffe blablba recipe, nice to drink blabla",
             intensity: 2,
-            preperationTime: 30,
+            preperationTime: 70,
+            steps: [],
+        },
+        {
+            name: "Recipe 5",
+            description: "lorem ipsum coffe blablba recipe, nice to drink blabla",
+            intensity: 1,
+            preperationTime: 60,
+            steps: [],
+        },
+        {
+            name: "Recipe 6",
+            description: "lorem ipsum coffe blablba recipe, nice to drink blabla",
+            intensity: 7,
+            preperationTime: 45,
             steps: [],
         },
     ];
