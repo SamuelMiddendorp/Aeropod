@@ -95,6 +95,11 @@
         margin-bottom: 0.4rem;
         color: var(--color-text);
     }
+    :global(h5){
+        font-family: "Archivo Black", sans-serif;
+        font-size: 1.1rem;
+        color: var(--color-text);
+    }
     :global(p){
         font-family: "Geologica", sans-serif;
         margin-top: 0.6rem;
