@@ -1,5 +1,6 @@
 <script lang="ts">
-    import type { Recipe } from "$lib/model/model";
+    import Stat from "$lib/components/Stat.svelte";
+import type { Recipe } from "$lib/model/model";
 
     let recipes: Recipe[] = [
         {
@@ -39,6 +40,7 @@
         <h5>{recipe.name}</h5>
         <h4>{recipe.description}</h4>
         <p>Intensity: {recipe.intensity}</p>
+        <Stat percentage={(recipe.intensity / 10 * 100)}/>
         <p>Prep time: {recipe.preperationTime}s</p>
     </div>
     {/each}
