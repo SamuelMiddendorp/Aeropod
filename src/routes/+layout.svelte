@@ -47,9 +47,9 @@
         --black-700: rgb(40,40,40);
         --black-500: rgb(30,30,30);
         --black-300: rgb(20,20,20);
-        --black-200: rgb(10,10,10);
-        --black-100: rgb(0,0,0);
-        --black-text: rgb(220,220,220);
+        --black-200: rgb(15,15,15);
+        --black-100: rgb(10,10,10);
+        --black-text: rgb(215,215,215);
 
         --color-900: var(--black-900);
         --color-700: var(--black-700);
