@@ -4,24 +4,28 @@
     let recipes: Recipe[] = [
         {
             name: "Recipe 1",
+            description: "lorem ipsum coffe blablba recipe, nice to drink blabla",
             intensity: 7,
             preperationTime: 360,
             steps: [],
         },
         {
             name: "Recipe 2",
+            description: "lorem ipsum coffe blablba recipe, nice to drink blabla",
             intensity: 8,
             preperationTime: 360,
             steps: [],
         },
         {
             name: "Recipe 3",
+            description: "lorem ipsum coffe blablba recipe, nice to drink blabla",
             intensity: 4,
             preperationTime: 30,
             steps: [],
         },
         {
             name: "Recipe 4",
+            description: "lorem ipsum coffe blablba recipe, nice to drink blabla",
             intensity: 2,
             preperationTime: 30,
             steps: [],
@@ -31,21 +35,25 @@
 
 <div class="recipes">
     {#each recipes as recipe}
-    <div class="recipe">
+    <div class="recipe aero-panel">
         <h5>{recipe.name}</h5>
+        <h4>{recipe.description}</h4>
         <p>Intensity: {recipe.intensity}</p>
-        <p>Prep time: {recipe.preperationTime}</p>
+        <p>Prep time: {recipe.preperationTime}s</p>
     </div>
     {/each}
 </div>
 <style>
+    h4{
+        margin-top: 0.2rem;
+        margin-bottom: 0.2rem;
+    }
     .recipes{
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     }
     .recipe{
         padding: 1rem;
-        width: 12rem;
-        background-color: var(--color-300);
     }
 </style>
