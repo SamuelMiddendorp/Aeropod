@@ -177,8 +177,8 @@
         }
         a {
             margin-bottom: 0 !important;
-            width: 3rem !important;
-            height: 3rem !important;
+            width: max(3rem, 15vw)!important;
+            height: max(3rem, 15vw) !important;
         }
     }
     div {
