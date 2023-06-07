@@ -131,6 +131,8 @@
         grid-template-rows: min-content 1fr;
         padding: 1rem;
         place-self: center;
+        /* Need some offset to make sure all content is visible when scrolling */
+        margin-bottom: 8rem;
     }
     main h2{
         font-family: "Archivo Black", sans-serif;
