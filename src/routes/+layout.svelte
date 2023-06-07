@@ -35,6 +35,9 @@
 
     @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Geologica:wght@100&family=Urbanist:wght@100&display=swap');
     :root{
+
+        --border-radius: 0.4rem;
+        --statement-color: #418f94; 
         --white-900: rgb(230,230,230);
         --white-700: rgb(235,235,235);
         --white-500: rgb(240,240,240);
@@ -77,7 +80,7 @@
     }
     :global(.aero-panel){
         box-shadow: 2px 1px 2px 1px var(--color-300);
-        border-radius: 0.4rem;
+        border-radius: var(--border-radius);
     }
     :global(a){
         all: unset;

@@ -17,7 +17,7 @@
     button {
         all: unset;
         cursor: pointer;
-        color: #418f94;
+        color: var(--statement-color);
         display: none;
         margin-left: 0.2rem;
     }

@@ -20,7 +20,7 @@ import type { Recipe } from "$lib/model/model";
         {
             name: "Recipe 3",
             description: "lorem ipsum coffe blablba recipe, nice to drink blabla",
-            intensity: 4,
+            intensity: 10,
             preperationTime: 30,
             steps: [],
         },
@@ -42,6 +42,7 @@ import type { Recipe } from "$lib/model/model";
         <p>Intensity: {recipe.intensity}</p>
         <Stat percentage={(recipe.intensity / 10 * 100)}/>
         <p>Prep time: {recipe.preperationTime}s</p>
+        <Stat percentage={(recipe.preperationTime/ 360 * 100)}/>
     </div>
     {/each}
 </div>
@@ -57,5 +58,8 @@ import type { Recipe } from "$lib/model/model";
     }
     .recipe{
         padding: 1rem;
+    }
+    p{
+        margin-bottom: 0.4rem;
     }
 </style>

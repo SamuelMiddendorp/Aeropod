@@ -160,6 +160,7 @@
 <style>
     @media only screen and (max-width: 600px) {
         div {
+            z-index: 100;
             grid-template-columns: repeat(4, 1fr);
             justify-content: space-between;
 
