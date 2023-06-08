@@ -38,6 +38,7 @@
 
         --border-radius: 0.4rem;
         --statement-color: #418f94; 
+        --statement-color-dark: #183436;
         --white-900: rgb(230,230,230);
         --white-700: rgb(235,235,235);
         --white-500: rgb(240,240,240);

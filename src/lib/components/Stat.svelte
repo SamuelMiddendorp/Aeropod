@@ -14,6 +14,6 @@
         position: relative;
         border-top-right-radius: var(--border-radius);
         border-bottom-right-radius: var(--border-radius);
-        background-color: var(--statement-color);
+        background-color: var(--color-900);
     }
 </style>
