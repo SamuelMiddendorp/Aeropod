@@ -51,6 +51,7 @@ import type { Recipe } from "$lib/model/model";
 <div class="recipes">
     {#each recipes as recipe}
     <div class="recipe aero-panel">
+        <button on:click={() => recipes = recipes.filter((x) => x != recipe)}>-</button>
         <h5>{recipe.name}</h5>
         <h4>{recipe.description}</h4>
         <p>Intensity: {recipe.intensity}</p>
@@ -68,9 +69,25 @@ import type { Recipe } from "$lib/model/model";
     .recipes{
         display: grid;
         gap: 1rem;
-        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    }
+    .recipe button{
+        all: unset;
+        font-size: 1.4rem;
+        color: var(--color-text);
+        background-color: var(--color-500);
+        display: grid;
+        border-top-right-radius: var(--border-radius);
+        place-content: center;
+
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        top: 0;
+        right: 0;
     }
     .recipe{
+        position: relative;
         padding: 1rem;
     }
     p{
