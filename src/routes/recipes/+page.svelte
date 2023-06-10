@@ -50,6 +50,7 @@ import type { Recipe } from "$lib/model/model";
 
 <div class="recipes">
     {#each recipes as recipe}
+    <a href="recipes/22">foo</a>
     <div class="recipe aero-panel">
         <button on:click={() => recipes = recipes.filter((x) => x != recipe)}>-</button>
         <h5>{recipe.name}</h5>
