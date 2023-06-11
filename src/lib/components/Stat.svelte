@@ -9,6 +9,8 @@
         display: inline-block;
         width: 100%;
         background-color: var(--color-500);
+        border-top-right-radius: var(--border-radius);
+        border-bottom-right-radius: var(--border-radius);
     }
     .inner{
         position: relative;
