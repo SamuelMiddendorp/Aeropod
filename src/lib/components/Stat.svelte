@@ -1,7 +1,7 @@
 <script lang="ts">
     export let percentage: number = 0;
 </script>
-<div class="outer aero-panel">
+<div class="outer">
     <div style="width: {percentage}%"class="inner">&nbsp;</div>
 </div>
 <style>

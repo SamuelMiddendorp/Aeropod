@@ -50,15 +50,16 @@ import type { Recipe } from "$lib/model/model";
 
 <div class="recipes">
     {#each recipes as recipe}
-    <a href="recipes/22">foo</a>
     <div class="recipe aero-panel">
         <button on:click={() => recipes = recipes.filter((x) => x != recipe)}>-</button>
+        <a draggable="false" href="recipes/22">
         <h5>{recipe.name}</h5>
         <h4>{recipe.description}</h4>
         <p>Intensity: {recipe.intensity}</p>
         <Stat percentage={(recipe.intensity / 10 * 100)}/>
         <p>Prep time: {recipe.preperationTime}s</p>
         <Stat percentage={(recipe.preperationTime/ 360 * 100)}/>
+        </a>
     </div>
     {/each}
 </div>
@@ -88,8 +89,12 @@ import type { Recipe } from "$lib/model/model";
         right: 0;
     }
     .recipe{
+        transition: all 0.2s ease-in-out;
         position: relative;
         padding: 1rem;
+    }
+    .recipe:hover{
+        background-color: var(--color-700);
     }
     p{
         margin-bottom: 0.4rem;
