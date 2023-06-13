@@ -14,8 +14,9 @@
     <p>Prep time: {recipe.preperationTime}s</p>
     <Stat percentage={(recipe.preperationTime / 360) * 100} />
     <h3>Steps</h3>
-    {#each recipe.steps as step}
-        <h4>{step.name}</h4>
+    {#each recipe.steps as step, index}
+        
+        <h4>{index+1}. {step.name}</h4>
         <p>{step.description}</p>
     {/each}
 </div>
