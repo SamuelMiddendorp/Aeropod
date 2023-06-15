@@ -45,6 +45,9 @@ let recipes: Recipe[] = [
         id: "6",
         name: "Recipe 6",
         description: "lorem ipsum coffe blablba recipe, nice to drink blabla",
+        coffeeIn: 8,
+        coffeeOut: 200,
+        inverted: true,
         intensity: 7,
         preperationTime: 45,
         steps: [{

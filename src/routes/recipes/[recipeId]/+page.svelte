@@ -6,7 +6,17 @@
 </script>
 
 <div>
-    Recipe:
+    <div class="properties">
+        {#if recipe.coffeeIn}
+            <h3>{recipe.coffeeIn}</h3>
+        {/if}
+        {#if recipe.coffeeOut}
+            <h3>{recipe.coffeeOut}</h3>
+        {/if}
+        {#if recipe.inverted}
+            <h3>{recipe.inverted}</h3>
+        {/if}
+    </div>
     <h3>{recipe.name}</h3>
     <p>{recipe.description}</p>
     <p>Intensity: {recipe.intensity}</p>
@@ -15,16 +25,16 @@
     <Stat percentage={(recipe.preperationTime / 360) * 100} />
     <h3>Steps</h3>
     {#each recipe.steps as step, index}
-        
-        <h4>{index+1}. {step.name}</h4>
+        <h4>{index + 1}. {step.name}</h4>
         <p>{step.description}</p>
     {/each}
 </div>
+
 <style>
-    h3{
+    h3 {
         margin-top: 1rem;
     }
-    h4{
+    h4 {
         margin-top: 0.2rem;
     }
 </style>
