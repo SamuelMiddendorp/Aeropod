@@ -8,13 +8,23 @@
 <div>
     <div class="properties">
         {#if recipe.coffeeIn}
-            <h4>{recipe.coffeeIn} gram coffee</h4>
+        <div class="property aero-panel">
+
+            <h4>{recipe.coffeeIn}</h4>
+            <p>grams of coffee</p>
+        </div>
         {/if}
         {#if recipe.coffeeOut}
-            <h4>{recipe.coffeeOut} ml water</h4>
+        <div class="property aero-panel">
+            <h4>{recipe.coffeeOut}</h4>
+            <p>ml's of water</p>
+        </div>
         {/if}
         {#if recipe.inverted}
+        <div class="property aero-panel">
             <h4>{recipe.inverted ? "Inverted" : "Normal"}</h4>
+            <p>brewing</p>
+        </div>
         {/if}
     </div>
     <h3>{recipe.name}</h3>
@@ -39,13 +49,16 @@
     }
     .properties{
         display: grid;
-        justify-items: center;
-        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        gap: 1rem;
+        justify-items: start;
+        grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
     }
-    .properties h4{
+    .property{
         border-radius: var(--border-radius);
         display: grid;
+        width: 10rem;
         place-content: center;
+        place-items: center;
         padding: 1rem;
         background-color: var(--color-500);
     }
