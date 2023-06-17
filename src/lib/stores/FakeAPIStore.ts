@@ -6,7 +6,7 @@ let recipes: Recipe[] = [
         name: "Recipe 1",
         description: "lorem ipsum coffe blablba recipe, nice to drink blabla",
         intensity: 7,
-        preperationTime: 360,
+        preparationTime: 360,
         steps: [],
     },
     {
@@ -14,7 +14,7 @@ let recipes: Recipe[] = [
         name: "Recipe 2",
         description: "lorem ipsum coffe blablba recipe, nice to drink blabla",
         intensity: 8,
-        preperationTime: 360,
+        preparationTime: 360,
         steps: [],
     },
     {
@@ -22,7 +22,7 @@ let recipes: Recipe[] = [
         name: "Recipe 3",
         description: "lorem ipsum coffe blablba recipe, nice to drink blabla",
         intensity: 10,
-        preperationTime: 30,
+        preparationTime: 30,
         steps: [],
     },
     {
@@ -30,7 +30,7 @@ let recipes: Recipe[] = [
         name: "Recipe 4",
         description: "lorem ipsum coffe blablba recipe, nice to drink blabla",
         intensity: 2,
-        preperationTime: 70,
+        preparationTime: 70,
         steps: [],
     },
     {
@@ -38,7 +38,7 @@ let recipes: Recipe[] = [
         name: "Recipe 5",
         description: "lorem ipsum coffe blablba recipe, nice to drink blabla",
         intensity: 1,
-        preperationTime: 60,
+        preparationTime: 60,
         steps: [],
     },
     {
@@ -48,8 +48,9 @@ let recipes: Recipe[] = [
         coffeeIn: 8,
         coffeeOut: 200,
         inverted: true,
+        coldBrew: true,
         intensity: 7,
-        preperationTime: 45,
+        preparationTime: 45,
         steps: [{
             "name": "Grind coffee",
             "description": "Grind 18 grams of coffee on a course/medium setting"

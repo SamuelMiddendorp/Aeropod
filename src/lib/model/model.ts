@@ -5,8 +5,9 @@ export interface Recipe{
     coffeeIn?: number,
     coffeeOut?: number,
     inverted?: boolean,
+    coldBrew?: boolean,
     intensity: number,
-    preperationTime: number,
+    preparationTime: number,
     steps: Step[]
 }
 export interface Step{

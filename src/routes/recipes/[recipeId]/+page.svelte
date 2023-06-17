@@ -26,6 +26,12 @@
             <p>brewing</p>
         </div>
         {/if}
+        {#if recipe.coldBrew}
+        <div class="property aero-panel">
+            <h4>{recipe.coldBrew ? "Cold" : "Hot"}</h4>
+            <p>brew</p>
+        </div>
+        {/if}
     </div>
     <h3>{recipe.name}</h3>
     <p>{recipe.description}</p>
@@ -50,7 +56,6 @@
     .properties{
         display: grid;
         gap: 1rem;
-        justify-items: start;
         grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
     }
     .property{
