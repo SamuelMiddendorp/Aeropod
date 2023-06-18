@@ -17,8 +17,8 @@
                 <h4>{recipe.description}</h4>
                 <p>Intensity: {recipe.intensity}</p>
                 <Stat percentage={(recipe.intensity / 10) * 100} />
-                <p>Prep time: {recipe.preperationTime}s</p>
-                <Stat percentage={(recipe.preperationTime / 360) * 100} />
+                <p>Prep time: {recipe.preparationTime}s</p>
+                <Stat percentage={(recipe.preparationTime / 360) * 100} />
             </a>
         </div>
     {/each}
