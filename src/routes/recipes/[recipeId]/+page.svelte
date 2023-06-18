@@ -38,7 +38,7 @@
     <p>Intensity: {recipe.intensity}</p>
     <Stat percentage={(recipe.intensity / 10) * 100} />
     <p>Prep time: {recipe.preperationTime}s</p>
-    <Stat percentage={(recipe.preperationTime / 360) * 100} />
+    <Stat percentage={(recipe.preparationTime / 360) * 100} />
     <h3>Steps</h3>
     {#each recipe.steps as step, index}
         <h4>{index + 1}. {step.name}</h4>
