@@ -67,4 +67,7 @@
         padding: 1rem;
         background-color: var(--color-500);
     }
+    p{
+        margin-bottom: 0.4rem;
+    }
 </style>
