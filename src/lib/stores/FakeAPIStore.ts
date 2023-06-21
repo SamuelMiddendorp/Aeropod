@@ -1,4 +1,4 @@
-import type { Recipe } from "$lib/model/model";
+import type { Gear, Recipe } from "$lib/model/model";
 
 let recipes: Recipe[] = [
     {
@@ -61,7 +61,15 @@ let recipes: Recipe[] = [
 export const getRecipes = () => {
     return recipes;
 }
-
+export const getGear = () : Gear[] => {
+    return [
+        {
+            name: "grinder1",
+            category: "grinder",
+            brand: "timemore"
+        }
+    ];
+}
 export const getRecipe = (recipeId: string): Promise<Recipe> => {
 
     return new Promise((resolve, reject) => {
