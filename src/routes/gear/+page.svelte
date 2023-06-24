@@ -17,6 +17,10 @@ let gear: Gear[] = getGear();
 <style>
     .gear{
         display: grid;
+        gap: 1rem;
         grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+    }
+    .gear div{
+        padding: 1rem;
     }
 </style>

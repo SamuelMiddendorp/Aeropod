@@ -67,6 +67,11 @@ export const getGear = () : Gear[] => {
             name: "grinder1",
             category: "grinder",
             brand: "timemore"
+        },
+        {
+            name: "grinder2",
+            category: "grinder",
+            brand: "timemore"
         }
     ];
 }
