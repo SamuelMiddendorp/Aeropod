@@ -33,7 +33,7 @@
         </div>
         {/if}
     </div>
-    <h3>{recipe.name}</h3>
+    <h3 contenteditable="true" bind:innerText={recipe.name}>{recipe.name}</h3>
     <p>{recipe.description}</p>
     <p>Intensity: {recipe.intensity}</p>
     <Stat percentage={(recipe.intensity / 10) * 100} />
