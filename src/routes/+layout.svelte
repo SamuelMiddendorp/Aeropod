@@ -79,6 +79,10 @@
         padding: 0;
         box-sizing: border-box;
     }
+    :global(button){
+        all: unset;
+        font-family: "Archivo Black", sans-serif;
+    }
     :global(.aero-panel){
         box-shadow: 2px 1px 2px 1px var(--color-300);
         border-radius: var(--border-radius);

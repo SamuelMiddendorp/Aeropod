@@ -3,6 +3,7 @@
     import type { Recipe } from "$lib/model/model";
     export let data;
     let recipe: Recipe = data.recipe;
+    let setFocus
 </script>
 
 <div>
@@ -33,9 +34,12 @@
         </div>
         {/if}
     </div>
-    <h3 contenteditable="true" bind:innerText={recipe.name}>{recipe.name}</h3>
+    <div class="foo">
+    <h3 id="focusable" contenteditable="true" bind:innerText={recipe.name}>{recipe.name}</h3>
+    <button on:click={() => document.getElementById("focusable")?.focus()}>✎</button>
+    </div>
     <p>{recipe.description}</p>
-    <p>Intensity: {recipe.intensity}</p>
+    <p>Intensity: <span contenteditable="true" bind:innerText={recipe.intensity}>{recipe.intensity}</span></p>
     <Stat percentage={(recipe.intensity / 10) * 100} />
     <p>Prep time: {recipe.preparationTime}s</p>
     <Stat percentage={(recipe.preparationTime / 360) * 100} />
@@ -49,6 +53,24 @@
 <style>
     h3 {
         margin-top: 1rem;
+    }
+    .foo{
+        display: grid;
+        grid-template-columns: max-content min-content;
+        align-items: center;
+
+    }
+    .foo:hover button{
+        display: block;
+    }
+    .foo button{
+        transition: all 0.1s ease-in-out;
+        font-size: 1.4rem;
+        color: var(--statement-color);
+    }
+    .foo button:hover{
+        font-size: 1.7rem;
+
     }
     h4 {
         margin-top: 0.2rem;
