@@ -3,7 +3,14 @@
     import type { Recipe } from "$lib/model/model";
     export let data;
     let recipe: Recipe = data.recipe;
-    let setFocus
+    let setFocus = (e: Event) => {
+        console.log("foobar");
+        let target = e.target as HTMLButtonElement;
+        let prev = target.previousSibling?.previousSibling as HTMLElement;
+        console.log(prev);
+        prev.focus();
+
+    }
 </script>
 
 <div>
@@ -36,9 +43,10 @@
     </div>
     <div class="foo">
     <h3 id="focusable" contenteditable="true" bind:innerText={recipe.name}>{recipe.name}</h3>
-    <button on:click={() => document.getElementById("focusable")?.focus()}>✎</button>
+    <button on:click={setFocus}>✎</button>
     </div>
-    <p>{recipe.description}</p>
+    <p contenteditable="true">{recipe.description}</p>
+    <button on:click={setFocus}>✎</button>
     <p>Intensity: <span contenteditable="true" bind:innerText={recipe.intensity}>{recipe.intensity}</span></p>
     <Stat percentage={(recipe.intensity / 10) * 100} />
     <p>Prep time: {recipe.preparationTime}s</p>
@@ -63,7 +71,7 @@
     .foo:hover button{
         display: block;
     }
-    .foo button{
+    button{
         transition: all 0.1s ease-in-out;
         font-size: 1.4rem;
         color: var(--statement-color);
