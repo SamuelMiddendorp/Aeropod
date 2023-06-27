@@ -14,25 +14,23 @@
         {#if recipe.coffeeIn != null}
         <div class="property aero-panel">
 
-            <input type="text" bind:value={recipe.coffeeIn}>
+            <input type="number" bind:value={recipe.coffeeIn}>
             <p>grams of coffee</p>
         </div>
         {/if}
         {#if recipe.coffeeOut != null}
         <div class="property aero-panel">
-            <h4>{recipe.coffeeOut}</h4>
+            <input type="number" bind:value={recipe.coffeeOut}>
             <p>ml's of water</p>
         </div>
         {/if}
         {#if recipe.inverted != null}
         <div class="property aero-panel">
-            <h4>{recipe.inverted ? "Inverted" : "Normal"}</h4>
             <p>brewing</p>
         </div>
         {/if}
         {#if recipe.coldBrew != null}
         <div class="property aero-panel">
-            <h4>{recipe.coldBrew ? "Cold" : "Hot"}</h4>
             <p>brew</p>
         </div>
         {/if}                                                                                                                                                                                                                                                   
@@ -52,6 +50,13 @@
 </div>
 
 <style>
+    input{
+        all: unset;
+        max-width: 5rem;
+        font-family: "Archivo Black", sans-serif;
+        color: var(--color-text);
+        text-align: center;
+    }
     h3 {
         margin-top: 1rem;
     }
