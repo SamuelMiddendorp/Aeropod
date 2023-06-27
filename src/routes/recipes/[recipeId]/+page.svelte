@@ -3,17 +3,10 @@
     import type { Recipe } from "$lib/model/model";
     export let data;
     let recipe: Recipe = data.recipe;
-    let setFocus = (e: Event) => {
-        console.log("foobar");
-        let target = e.target as HTMLButtonElement;
-        let prev = target.previousSibling?.previousSibling as HTMLElement;
-        console.log(prev);
-        prev.focus();
-
-    }
 </script>
 
 <div>
+    <form>
     <div class="properties">
         {#if recipe.coffeeIn}
         <div class="property aero-panel">
@@ -39,15 +32,11 @@
             <h4>{recipe.coldBrew ? "Cold" : "Hot"}</h4>
             <p>brew</p>
         </div>
-        {/if}
+        {/if}                                                                                                                                                                                                                                                   
     </div>
-    <div class="foo">
-    <h3 id="focusable" contenteditable="true" bind:innerText={recipe.name}>{recipe.name}</h3>
-    <button on:click={setFocus}>✎</button>
-    </div>
-    <p contenteditable="true">{recipe.description}</p>
-    <button on:click={setFocus}>✎</button>
-    <p>Intensity: <span contenteditable="true" bind:innerText={recipe.intensity}>{recipe.intensity}</span></p>
+    <h3>{recipe.name}</h3>
+    <p>{recipe.description}</p>
+    <p>Intensity: <span>{recipe.intensity}</span></p>
     <Stat percentage={(recipe.intensity / 10) * 100} />
     <p>Prep time: {recipe.preparationTime}s</p>
     <Stat percentage={(recipe.preparationTime / 360) * 100} />
@@ -56,30 +45,14 @@
         <h4>{index + 1}. {step.name}</h4>
         <p>{step.description}</p>
     {/each}
+    </form>
 </div>
 
 <style>
     h3 {
         margin-top: 1rem;
     }
-    .foo{
-        display: grid;
-        grid-template-columns: max-content min-content;
-        align-items: center;
 
-    }
-    .foo:hover button{
-        display: block;
-    }
-    button{
-        transition: all 0.1s ease-in-out;
-        font-size: 1.4rem;
-        color: var(--statement-color);
-    }
-    .foo button:hover{
-        font-size: 1.7rem;
-
-    }
     h4 {
         margin-top: 0.2rem;
     }
