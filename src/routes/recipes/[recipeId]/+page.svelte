@@ -3,31 +3,34 @@
     import type { Recipe } from "$lib/model/model";
     export let data;
     let recipe: Recipe = data.recipe;
+    $: {
+        console.log(recipe.coffeeIn);
+    }
 </script>
 
 <div>
     <form>
     <div class="properties">
-        {#if recipe.coffeeIn}
+        {#if recipe.coffeeIn != null}
         <div class="property aero-panel">
 
-            <h4>{recipe.coffeeIn}</h4>
+            <input type="text" bind:value={recipe.coffeeIn}>
             <p>grams of coffee</p>
         </div>
         {/if}
-        {#if recipe.coffeeOut}
+        {#if recipe.coffeeOut != null}
         <div class="property aero-panel">
             <h4>{recipe.coffeeOut}</h4>
             <p>ml's of water</p>
         </div>
         {/if}
-        {#if recipe.inverted}
+        {#if recipe.inverted != null}
         <div class="property aero-panel">
             <h4>{recipe.inverted ? "Inverted" : "Normal"}</h4>
             <p>brewing</p>
         </div>
         {/if}
-        {#if recipe.coldBrew}
+        {#if recipe.coldBrew != null}
         <div class="property aero-panel">
             <h4>{recipe.coldBrew ? "Cold" : "Hot"}</h4>
             <p>brew</p>
