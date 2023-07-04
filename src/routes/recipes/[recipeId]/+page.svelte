@@ -41,19 +41,29 @@
     </div>
     <input class="text-input-h3" type="text" bind:value={recipe.name}>
     <p>{recipe.description}</p>
-    <p>Intensity: <span>{recipe.intensity}</span></p>
+    <p>Intensity: <input class="number-input" type="number" bind:value={recipe.intensity}>
     <Stat percentage={(recipe.intensity / 10) * 100} />
     <p>Prep time: {recipe.preparationTime}s</p>
     <Stat percentage={(recipe.preparationTime / 360) * 100} />
     <h3>Steps</h3>
     {#each recipe.steps as step, index}
+        <div class="step">
         <h4>{index + 1}. {step.name}</h4>
         <p>{step.description}</p>
+        <button on:click={() => recipe.steps = recipe.steps.filter(s => s != step)}>Remove step -</button>
+        </div>
     {/each}
+    <button on:click={() => recipe.steps = [...recipe.steps, {name: "Step Name", description: "Step Description"}]}>Add step +</button>
     </form>
 </div>
 
 <style>
+    button{
+        color: var(--color-text);
+    }
+    .step{
+        margin-bottom: 1rem;
+    }
     .text-input-h3{
         all: unset;
         font-size: 2rem;
