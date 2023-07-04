@@ -39,7 +39,7 @@
         </div>
         {/if}                                                                                                                                                                                                                                                   
     </div>
-    <h3>{recipe.name}</h3>
+    <input class="text-input-h3" type="text" bind:value={recipe.name}>
     <p>{recipe.description}</p>
     <p>Intensity: <span>{recipe.intensity}</span></p>
     <Stat percentage={(recipe.intensity / 10) * 100} />
@@ -54,6 +54,13 @@
 </div>
 
 <style>
+    .text-input-h3{
+        all: unset;
+        font-size: 2rem;
+        margin-top: 1rem;
+        font-family: "Archivo Black", sans-serif;
+        color: var(--color-text);
+    }
     .number-input{
         all: unset;
         max-width: 5rem;
