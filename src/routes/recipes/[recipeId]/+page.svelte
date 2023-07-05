@@ -49,7 +49,7 @@
     {#each recipe.steps as step, index}
         <div class="step">
         <h4>{index + 1}. {step.name}</h4>
-        <p>{step.description}</p>
+        <textarea cols="50" rows="3" class="text-input-multiline" bind:value={step.description}></textarea>
         <button on:click={() => recipe.steps = recipe.steps.filter(s => s != step)}>Remove step -</button>
         </div>
     {/each}
@@ -63,6 +63,19 @@
     }
     .step{
         margin-bottom: 1rem;
+    }
+    .text-input-multiline{
+        all: unset;
+        display: block;
+        margin-bottom: 1rem;
+        color: var(--color-text);
+    }
+    .text-input-h3{
+        all: unset;
+        font-size: 2rem;
+        margin-top: 1rem;
+        font-family: "Archivo Black", sans-serif;
+        color: var(--color-text);
     }
     .text-input-h3{
         all: unset;

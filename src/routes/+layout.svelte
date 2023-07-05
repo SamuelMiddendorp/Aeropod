@@ -81,6 +81,7 @@
     }
     :global(button){
         all: unset;
+        cursor: pointer;
         font-family: "Archivo Black", sans-serif;
     }
     :global(.aero-panel){
