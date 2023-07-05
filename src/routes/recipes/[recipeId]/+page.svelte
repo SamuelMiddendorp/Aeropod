@@ -46,10 +46,10 @@
     <p>Prep time: {recipe.preparationTime}s</p>
     <Stat percentage={(recipe.preparationTime / 360) * 100} />
     <h3>Steps</h3>
-    {#each recipe.steps as step, index}
+    {#each recipe.steps as step}
         <div class="step">
-        <h4>{index + 1}. {step.name}</h4>
-        <textarea cols="50" rows="3" class="text-input-multiline" bind:value={step.description}></textarea>
+        <input class="text-input-h4" bind:value={step.name}>
+        <textarea cols="50" rows="2" class="text-input-multiline" bind:value={step.description}></textarea>
         <button on:click={() => recipe.steps = recipe.steps.filter(s => s != step)}>Remove step -</button>
         </div>
     {/each}
@@ -67,8 +67,14 @@
     .text-input-multiline{
         all: unset;
         display: block;
-        margin-bottom: 1rem;
+        padding: 0.2rem;
+        border-radius: var(--border-radius);
+        margin-bottom: 0.4rem;
+        font-family: "Geologica", sans-serif;
         color: var(--color-text);
+    }
+    .text-input-multiline:focus{
+        border: 2px solid var(--color-900);
     }
     .text-input-h3{
         all: unset;
@@ -77,10 +83,16 @@
         font-family: "Archivo Black", sans-serif;
         color: var(--color-text);
     }
-    .text-input-h3{
+    .text-input-h3:focus{
+        border: 2px solid var(--color-900);
+    }
+    .text-input-h4:focus{
+        border: 2px solid var(--color-900);
+    }
+    .text-input-h4{
         all: unset;
-        font-size: 2rem;
-        margin-top: 1rem;
+        margin-bottom: 0.4rem;
+        font-size: 1.2rem;
         font-family: "Archivo Black", sans-serif;
         color: var(--color-text);
     }
