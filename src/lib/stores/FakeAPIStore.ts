@@ -75,6 +75,12 @@ export const getGear = () : Gear[] => {
         }
     ];
 }
+export const setRecipe = (recipe: Recipe) => {
+    console.log("updating recipe");
+    let index = recipes.indexOf(recipes.find(x => x.id == recipe.id)!);
+    recipes[index] = recipe;
+}
+
 export const getRecipe = (recipeId: string): Promise<Recipe> => {
 
     return new Promise((resolve, reject) => {

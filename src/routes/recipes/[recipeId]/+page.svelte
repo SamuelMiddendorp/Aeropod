@@ -1,6 +1,7 @@
 <script lang="ts">
     import Stat from "$lib/components/Stat.svelte";
     import type { Recipe } from "$lib/model/model";
+    import { setRecipe } from "$lib/stores/FakeAPIStore";
     export let data;
     let recipe: Recipe = data.recipe;
     $: {
@@ -54,6 +55,7 @@
         </div>
     {/each}
     <button on:click={() => recipe.steps = [...recipe.steps, {name: "Step Name", description: "Step Description"}]}>Add step +</button>
+    <button on:click={() => setRecipe(recipe)}>Save recipe!</button>  
     </form>
 </div>
 
