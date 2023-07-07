@@ -81,6 +81,10 @@
     }
     :global(button){
         all: unset;
+        padding: 0.4rem;
+        background-color: var(--color-500);
+        border-radius: var(--border-radius);
+        color: var(--color-text);
         cursor: pointer;
         font-family: "Archivo Black", sans-serif;
     }

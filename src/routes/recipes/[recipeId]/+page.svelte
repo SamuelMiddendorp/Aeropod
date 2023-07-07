@@ -60,9 +60,6 @@
 </div>
 
 <style>
-    button{
-        color: var(--color-text);
-    }
     .step{
         margin-bottom: 1rem;
     }
